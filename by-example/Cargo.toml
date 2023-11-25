@@ -1,8 +1,27 @@
 [package]
-name = "by-example"
+name    = "by-example"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "format-print"
+path = "00-helloworld/format-print.rs"
+
+[[bin]]
+name = "std-fmt"
+path = "00-helloworld/std-fmt.rs"
+
+[[bin]]
+name = "std-display"
+path = "00-helloworld/std-display.rs"
+
+[[bin]]
+name = "list-display"
+path = "00-helloworld/list-display.rs"
+
+[[bin]]
+name = "std-format"
+path = "00-helloworld/std-format.rs"
 
 [dependencies]

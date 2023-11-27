@@ -40,7 +40,7 @@ impl Display for Color {
         let rgb = "RGB";
         write!(
             f,
-            "{} ({}, {}, {}) 0x{:X}{:X}{:X}",
+            "{} ({}, {}, {}) 0x{:02X}{:02X}{:02X}",
             rgb, self.red, self.green, self.blue, self.red, self.green, self.blue
         )
     }

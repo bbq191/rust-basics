@@ -24,4 +24,7 @@ path = "00-helloworld/list-display.rs"
 name = "std-format"
 path = "00-helloworld/std-format.rs"
 
+[[bin]]
+name = "primitives"
+path = "01-primitives/primitives.rs"
 [dependencies]

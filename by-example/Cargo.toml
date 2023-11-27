@@ -25,6 +25,18 @@ name = "std-format"
 path = "00-helloworld/std-format.rs"
 
 [[bin]]
-name = "primitives"
+name = "primitive"
 path = "01-primitives/primitives.rs"
+
+[[bin]]
+name = "literal"
+path = "01-primitives/literal.rs"
+
+[[bin]]
+name = "tuple"
+path = "01-primitives/tuple.rs"
+
+[[bin]]
+name = "array-slice"
+path = "01-primitives/array-slice.rs"
 [dependencies]

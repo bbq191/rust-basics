@@ -1,2 +1,3 @@
 [workspace]
-members = ["by-example", "datastructure"]
+members  = ["by-example", "datastructure"]
+resolver = "2"

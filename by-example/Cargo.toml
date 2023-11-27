@@ -39,4 +39,8 @@ path = "01-primitives/tuple.rs"
 [[bin]]
 name = "array-slice"
 path = "01-primitives/array-slice.rs"
+
+[[bin]]
+name = "structure"
+path = "02-customtype/structure.rs"
 [dependencies]

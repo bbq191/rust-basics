@@ -12,18 +12,36 @@ struct Unit;
 struct Pair(i32, f32);
 
 // 带有两个字段的结构体
+#[derive(Debug)]
 struct Point {
     x: f32,
     y: f32,
 }
 
 // 结构体可以作为另一个结构体的字段
+#[derive(Debug)]
 struct Rectangle {
     // 可以在空间中给定左上角和右下角在空间中的位置来指定矩形。
     top_left: Point,
     bottom_right: Point,
 }
 
+fn rect_area(rec: Rectangle) -> f32 {
+    let heigh = rec.top_left.y.abs() - rec.bottom_right.y.abs();
+    let width = rec.bottom_right.x.abs() - rec.top_left.x.abs();
+    heigh * width
+}
+
+fn square(p: Point, f: f32) -> Rectangle {
+    // println!(rec);
+    Rectangle {
+        top_left: Point { x: p.x, y: p.y },
+        bottom_right: Point {
+            x: p.x + f.abs(),
+            y: p.y - f.abs(),
+        },
+    }
+}
 fn main() {
     // 使用简单的写法初始化字段，并创建结构体
     let name = String::from("Peter");
@@ -58,8 +76,14 @@ fn main() {
             x: left_edge,
             y: top_edge,
         },
-        bottom_right: bottom_right,
+        bottom_right,
     };
+
+    let rec = Rectangle {
+        top_left: Point { x: 1.0, y: 6.0 },
+        bottom_right: Point { x: 2.0, y: 1.0 },
+    };
+    println!("rect_area: {}", rect_area(rec));
 
     // 实例化一个单元结构体
     let _unit = Unit;
@@ -74,4 +98,5 @@ fn main() {
     let Pair(integer, decimal) = pair;
 
     println!("pair contains {:?} and {:?}", integer, decimal);
+    println!("square: {:?}", square(point, 3.0));
 }

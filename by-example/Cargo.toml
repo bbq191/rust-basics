@@ -42,5 +42,53 @@ path = "01-primitives/array-slice.rs"
 
 [[bin]]
 name = "structure"
-path = "02-customtype/structure.rs"
+path = "02-custom-type/structure.rs"
+
+[[bin]]
+name = "enum"
+path = "02-custom-type/enum/enum.rs"
+
+[[bin]]
+name = "type-aliase"
+path = "02-custom-type/enum/type-aliase.rs"
+
+[[bin]]
+name = "use"
+path = "02-custom-type/enum/use.rs"
+
+[[bin]]
+name = "c-like"
+path = "02-custom-type/enum/c-like.rs"
+
+[[bin]]
+name = "link-list"
+path = "02-custom-type/enum/link-list.rs"
+
+[[bin]]
+name = "constant"
+path = "02-custom-type/constant.rs"
+
+[[bin]]
+name = "variable-binding"
+path = "03-variable-binding/variable-binding.rs"
+
+[[bin]]
+name = "mutable"
+path = "03-variable-binding/mutable.rs"
+
+[[bin]]
+name = "shadow"
+path = "03-variable-binding/shadow.rs"
+
+[[bin]]
+name = "declare"
+path = "03-variable-binding/declare.rs"
+
+[[bin]]
+name = "freeze"
+path = "03-variable-binding/freeze.rs"
+
+[[bin]]
+name = "cast"
+path = "04-type/cast.rs"
 [dependencies]

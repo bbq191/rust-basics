@@ -91,4 +91,20 @@ path = "03-variable-binding/freeze.rs"
 [[bin]]
 name = "cast"
 path = "04-type/cast.rs"
+
+[[bin]]
+name = "literals"
+path = "04-type/literals.rs"
+
+[[bin]]
+name = "inference"
+path = "04-type/inference.rs"
+
+[[bin]]
+name = "aliase"
+path = "04-type/aliase.rs"
+
+[[bin]]
+name = "from-into"
+path = "05-conversion/from-into.rs"
 [dependencies]

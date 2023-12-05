@@ -107,4 +107,8 @@ path = "04-type/aliase.rs"
 [[bin]]
 name = "from-into"
 path = "05-conversion/from-into.rs"
+
+[[bin]]
+name = "try-from-into"
+path = "05-conversion/try-from-into.rs"
 [dependencies]

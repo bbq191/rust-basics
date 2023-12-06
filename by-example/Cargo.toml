@@ -123,4 +123,8 @@ path = "06-expression/expression.rs"
 [[bin]]
 name = "if-else"
 path = "07-flow-control/if-else.rs"
+
+[[bin]]
+name = "loop"
+path = "07-flow-control/loop/loop.rs"
 [dependencies]

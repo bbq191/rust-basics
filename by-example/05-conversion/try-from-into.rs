@@ -19,12 +19,10 @@ impl TryFrom<i32> for EvenNumber {
 
 fn main() {
     // TryFrom
-
     assert_eq!(EvenNumber::try_from(8), Ok(EvenNumber(8)));
     assert_eq!(EvenNumber::try_from(5), Err(()));
 
     // TryInto
-
     let result: Result<EvenNumber, ()> = 8i32.try_into();
     assert_eq!(result, Ok(EvenNumber(8)));
     let result: Result<EvenNumber, ()> = 5i32.try_into();

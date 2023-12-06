@@ -115,4 +115,12 @@ path = "05-conversion/try-from-into.rs"
 [[bin]]
 name = "convert-to-string"
 path = "05-conversion/convert-to-string.rs"
+
+[[bin]]
+name = "expression"
+path = "06-expression/expression.rs"
+
+[[bin]]
+name = "if-else"
+path = "07-flow-control/if-else.rs"
 [dependencies]

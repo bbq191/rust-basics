@@ -1,5 +1,6 @@
 /// 记录数据的位置索引
+#[derive(Clone, Copy, Debug)]
 pub struct LogDataPos {
-    file_id: u64,
-    offset: u64,
+    pub(crate) file_id: u64,
+    pub(crate) offset: u64,
 }

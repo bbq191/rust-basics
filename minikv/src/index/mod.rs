@@ -1,3 +1,5 @@
+pub mod btree;
+
 use crate::data::log_data_pos::LogDataPos;
 /// 抽象数据接口，以后如果添加新的数据结构，只需要实现这个接口即可
 pub trait Indexer {

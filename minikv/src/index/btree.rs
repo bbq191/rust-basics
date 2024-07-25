@@ -1,10 +1,7 @@
-use std::{collections::BTreeMap, sync::Arc};
-
-use parking_lot::RwLock;
-
-use crate::data::log_data_pos::LogDataPos;
-
 use super::Indexer;
+use crate::data::log_data_pos::LogDataPos;
+use parking_lot::RwLock;
+use std::{collections::BTreeMap, sync::Arc};
 
 /// 封装系统的BTreeMap
 pub struct BTree {

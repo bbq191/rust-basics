@@ -1,8 +1,9 @@
 pub mod btree;
 
 use crate::data::log_data_pos::LogDataPos;
+
 /// 抽象数据接口，以后如果添加新的数据结构，只需要实现这个接口即可
-pub trait Indexer {
+pub trait Indexer: Send + Sync {
     /// 向索引中存储 key 对应的位置信息     
     fn put(&self, key: Vec<u8>, pos: LogDataPos) -> bool;
     /// 从索引中获取 key 对应的位置信息
